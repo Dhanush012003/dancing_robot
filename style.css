@@ -1,0 +1,126 @@
+.face{
+    height: 70px;
+    width: 95px;
+    border-radius: 100px 100px 0 0;
+    background-color: palevioletred;
+    margin-left: 100px;
+    margin-top: 100px;
+    animation: moveface 1s infinite;
+    position: relative;
+}
+.lefteye{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 15px;
+    position: absolute;
+    animation: movelefteye 1s infinite;
+}
+.righteye{
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 72px;
+    margin-top: 50px;
+    position: absolute;
+    animation: moverighteye 1s infinite;
+}
+.body{
+    height: 100px;
+    width: 95px;
+    border-radius: 0 0 27px 27px;
+    background-color: palevioletred;
+    margin-top: 5px;
+    margin-left: 100px;
+    animation: movebody 1s infinite;
+}
+.arm1{
+    height: 60px;
+    width: 19px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: palevioletred;
+    margin-left: 75px;
+    margin-top: -85px;
+    position: absolute;
+    animation: movearm1 1s infinite;
+}
+.arm2{
+    height: 60px;
+    width: 19px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: palevioletred;
+    margin-left: 200px;
+    margin-top: -85px;
+    position: absolute;
+    animation: movearm2 1s infinite;
+}
+.leg1{
+    height: 45px;
+    width: 19px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: palevioletred;
+    margin-left: 120px;
+    margin-top: -12px;
+    position: absolute;
+    animation: moveleg1 1.5s infinite;
+    
+}
+.leg2{
+    height: 45px;
+    width: 19px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: palevioletred;
+    margin-left: 157px;
+    margin-top: -12px;
+    position: absolute;
+    animation: moveleg2 1.5s infinite;
+}
+@keyframes moveface{
+    0%{
+        transform: rotate(0deg);
+    }
+    60%{
+        width: 130px;
+        transform: skew(-20deg);
+    }
+}
+
+@keyframes movebody {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(180deg);
+        border-radius: 28px 28px 28px 28px;
+    }
+}
+@keyframes movearm1 {
+    0%{
+        transform: rotate(0deg);
+    }60%{
+        left: -9px;
+        transform: rotate(100deg);
+    }
+}
+@keyframes movearm2 {
+    0%{
+        transform: rotate(0deg);
+    }60%{
+        left: 25px;
+        transform: rotate(-100deg);
+    }
+}
+@keyframes moveleg1 {
+   50%{
+    transform-origin: top;
+    transform: rotate(60deg);
+   }
+}
+@keyframes moveleg2 {
+    50%{
+     transform-origin: top;
+     transform: rotate(-60deg);
+    }
+ }
